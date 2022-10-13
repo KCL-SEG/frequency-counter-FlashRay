@@ -4,8 +4,9 @@
 def frequencies(items):
     frequencies = {}
     for item in items:
-        if item in frequencies:
-            frequencies[item]+=1
+        itemNew = str(item)
+        if itemNew in frequencies:
+            frequencies[itemNew]+=1
         else:
-            frequencies[item]=1
+            frequencies[itemNew]=1
     return frequencies
